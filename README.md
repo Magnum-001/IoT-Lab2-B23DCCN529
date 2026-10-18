@@ -11,7 +11,7 @@ Dự án mô phỏng quá trình thu thập dữ liệu nhiệt độ, độ ẩ
 ## 2. Cấu trúc mã nguồn
 - `sketch.ino`: Firmware C++ chạy trên ESP32 giả lập (Đọc cảm biến DHT22, gửi MQTT).
 - `mqtt_to_influxdb.py`: Kịch bản Python đóng vai trò MQTT Client, nhận dữ liệu và ghi vào InfluxDB.
-- `data_preprocessing.py`: Kịch bản Python kéo dữ liệu từ InfluxDB, làm sạch, chuẩn hóa và lưu lại.
+- `data_preprocessing.py`: Kịch bản Python tiền xử lý (kéo dữ liệu từ InfluxDB, làm sạch, chuẩn hóa và lưu lại).
 - `iot_dashboard.py`: Giao diện web hiển thị biểu đồ so sánh dữ liệu thô và dữ liệu sạch.
 
 ## 3. Hướng dẫn chạy hệ thống
